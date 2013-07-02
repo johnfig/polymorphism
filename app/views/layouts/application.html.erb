@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+  	<div>
+  		<ul>
+  			<%= link_to "Article", articles_path, class: "btn btn-small" %>
+    		<%= link_to "Photo", photos_path, class: "btn btn-small" %>
+    		<%= link_to "Event", events_path, class: "btn btn-small" %>
+  		<ul>
+		</div>
+	</header>
 
 <%= yield %>
 
