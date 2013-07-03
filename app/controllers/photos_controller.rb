@@ -14,11 +14,9 @@ class PhotosController < ApplicationController
   # GET /photos/1.json
   def show
     @photo = Photo.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @photo }
-    end
+    @commentable = @photo
+    @comments = @commentable.comments
+    @comment = Comment.new
   end
 
   # GET /photos/new

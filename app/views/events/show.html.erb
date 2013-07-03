@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Description:</b>
-  <%= @event.description %>
+  <b>Name:</b>
+  <%= @event.name %>
 </p>
 
 <p>
-  <b>Name:</b>
-  <%= @event.name %>
+  <b>Description:</b>
+  <%= @event.description %>
 </p>
 
 <p>
@@ -23,3 +23,8 @@
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
+<h2>Comments</h2>
+<hr align="left" width="500px">
+<%= render 'comments/comments' %>
+<%= render 'comments/form' %>

@@ -1,15 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Content:</b>
-  <%= @article.content %>
-</p>
-
-<p>
   <b>Name:</b>
   <%= @article.name %>
 </p>
 
+<p>
+  <b>Content:</b>
+  <%= @article.content %>
+</p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+
+<h2>Comments</h2>
+<hr align="left" width="500px">
+<%= render 'comments/comments' %>
+<%= render 'comments/form' %>

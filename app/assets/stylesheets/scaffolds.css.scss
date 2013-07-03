@@ -6,6 +6,17 @@ body {
   line-height: 18px;
 }
 
+.top-nav {
+  text-align: right;
+}
+
+.comment {
+  background-color: #ddd;
+  width:500px;
+  border: 1px black solid;
+  padding: 5px;
+}
+
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
