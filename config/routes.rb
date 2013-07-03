@@ -11,6 +11,8 @@ Polymorphism::Application.routes.draw do
     resources :comments
   end
 
+  root to: 'articles#index'
+
   match '/photos',       to: 'photos#index'
   match '/events',       to: 'events#index'
   match '/articles',     to: 'articles#index'
