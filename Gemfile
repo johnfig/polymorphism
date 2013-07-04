@@ -7,7 +7,9 @@ gem "paperclip", "~> 3.4.2"
 gem "yaml_db"
 gem "mysql2"
 gem "will_paginate", "~> 3.0.4"
-
+gem "sunspot_rails"
+gem "sunspot_solr", "~> 2.0.0"
+gem "progress_bar", "~> 1.0.0"
 
 # Gems used only for assets and not required
 # in production environments by default.
