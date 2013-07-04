@@ -6,6 +6,7 @@ gem "annotate", "~> 2.5.0"
 gem "paperclip", "~> 3.4.2"
 gem "yaml_db"
 gem "mysql2"
+gem "will_paginate", "~> 3.0.4"
 
 
 # Gems used only for assets and not required
